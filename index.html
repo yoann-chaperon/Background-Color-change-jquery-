@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Jquery Background Color change </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" class="rel">
+  </head>
+  <body>
+      <ul>
+          <li><a href="#" data-color="deepskyblue">moi</a></li>
+          <li><a href="#" data-color="seagreen">seagreen</a></li>
+          <li><a href="#" data-color="bleuviolet">bleuviolet</a></li>
+          <li><a href="#" data-color="deeppink">deeppink</a></li>
+          <li><a href="#" data-color="peru">perun</a></li>
+          <li><a href="#" data-color="firebrick">firebrick</a></li>
+      </ul>
+      <h2>color change</h2>
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script>
+          $("ul li a").hover(function () {
+                      var ddd = $(this).attr("data-color");
+                      $("body").css("background", ddd)
+                  });
+      </script>
+  </body>
+</html>
